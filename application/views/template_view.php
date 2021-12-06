@@ -13,9 +13,19 @@
 <div class="container">
     <header class="header">
         <p>Это шапка сайта</p>
+    <nav id="menu">
+        <ul>
+            <li><a href="" class="active">Главная</a></li>
+            <li><a href="">О компании</a></li>
+            <li><a href="">Продукты</a></li>
+            <li><a href="">Информация</a></li>
+            <li><a href="">Как доехать</a></li>
+        </ul>
+    </nav>
     </header>
     <nav class="nav">
         <p>Здесь будет навигация</p>
+
     </nav>
     <main class="main">
         <p>основное содержимое</p>
