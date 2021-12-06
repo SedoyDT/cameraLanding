@@ -1,0 +1,29 @@
+body {
+    margin: 0px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(12,fr);
+    grid-template-rows: 5vh 90vh 4vh;
+    grid-gap: 0.5vh;
+    grid-template-areas:
+        "h h h h h h h h h h h h h"
+        "n n c c c c c c c c c c c"
+        "f f f f f f f f f f f f f";
+}
+.header,.footer {
+    background-color: #5680E9;
+    color: #e3e3e3;
+}
+.header {
+    grid-area: h;
+
+}
+.footer {
+    grid-area: f;
+}
+
+.nav {
+    background-color: #84CEEB;
+    grid-area: n;
+}
