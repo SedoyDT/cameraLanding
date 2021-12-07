@@ -15,4 +15,12 @@ class Controller_Test extends Controller
         $data = $this->model->get_data();
         $this->view->generate('test_view.php', 'template_view.php',$data);
     }
+
+    // http://landing/test/test/
+    function action_test()
+    {
+        echo "test";
+    }
+
+
 }
