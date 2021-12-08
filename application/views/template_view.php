@@ -5,8 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" type="text/css" href="/css/template_view_style.css" />
-    <link rel="icon" href="../../images/camera.svg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>    <link rel="icon" href="../../images/camera.svg" type="image/x-icon">
+    <script src="/js/scroll.js"></script>
+
     <title>Подольск установка камер</title>
 </head>
 <body>
@@ -139,21 +142,25 @@
         </label>
         <img src="../../images/camera.svg" alt="" id="logo" >
         <ul class="menu__box">
-            <li><a class = "menu__item" href="">Главная</a></li>
+            <li><a class = "menu__item" href="main">Главная</a></li>
+            <li><a class = "menu__item" href="article">Галерея</a></li>
             <li><a class = "menu__item" href="">О нас</a></li>
-            <li><a class = "menu__item" href="">Галерея</a></li>
         </ul>
     </nav>
 
     </header>
-    <main class="main">
+    <main id="main">
         <?php include 'application/views/'.$content_view; ?>
     </main>
-    <footer class="footer">
+    <article id="article">
+        <p>Стас</p>
+    </article>
+    <footer id="footer">
         <p>Футер</p>
     </footer>
 </div>
 
 </body>
+
 </html>
 
